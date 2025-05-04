@@ -10,5 +10,9 @@ app = Flask(__name__)  # Flask 애플리케이션 객체 생성
 def hello():
     return "Hello, World!"  # 브라우저에 출력될 텍스트
 
+@app.route("/1")
+def introduction():
+    return "16th ecops 5th week"
+
 if __name__ == "__main__":
     app.run(debug=True)  # 개발 서버 실행 (디버그 모드)
